@@ -22,7 +22,7 @@ export default function LoginPage() {
     return (
         <>
             <Header />
-            <div className="flex w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-4xl lg:my-20">
+            <div className="flex w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-4xl lg:my-20 md:my-10 sm:my-6">
                 <div className="hidden bg-cover lg:block lg:w-1/2" style={{ backgroundImage: `url(${unsplashImgAddr})` }}></div>
 
                 <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
@@ -42,7 +42,7 @@ export default function LoginPage() {
                             <FcGoogle className="w-6 h-6" />
                         </div>
                         <span className="w-5/6 px-2 py-3 font-bold text-center tracking-wide">
-                            Sign in with Google
+                            Login with Google
                         </span>
                     </a>
 
@@ -100,7 +100,7 @@ export default function LoginPage() {
                             className="w-full px-6 py-3 text-sm font-medium tracking-wider uppercase text-base-100 transition-colors duration-300 transform bg-neutral rounded-lg focus:outline-none focus:ring focus:ring-gray-200 focus:ring-opacity-0 hover:bg-neutral-content hover:text-neutral"
                             onClick={handleSignIn}
                         >
-                            Sign In
+                            Login
                         </button>
                     </div>
 

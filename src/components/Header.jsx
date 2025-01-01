@@ -21,17 +21,22 @@ export default function Header() {
             className="btn btn-ghost lg:hidden"
             onClick={toggleMenu}
           >
-            {menuOpen ? <IoClose className="h-6 w-6" /> : <IoMenu className="h-6 w-6" />}
+            {menuOpen ? (
+              <IoClose className="h-6 w-6" />
+            ) : (
+              <IoMenu className="h-6 w-6" />
+            )}
           </div>
           {menuOpen && (
-            <ul
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
+            <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li>
-                <a>About</a>
+                <a href="/about-us">About</a>
               </li>
               <li>
-                <a>Services</a>
+                <a href="/services">Services</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           )}
@@ -53,11 +58,18 @@ export default function Header() {
           <li>
             <a href="/services">Services</a>
           </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
       <div className="navbar-end space-x-4">
-        <button className="text-md" href="/login">Sign in</button>
-        <button className="btn btn-outline text-md rounded-3xl" href="/sign-up">Sign up</button>
+        <a className="text-md" href="/login">
+          Login
+        </a>
+        <a className="btn btn-outline text-md rounded-3xl" href="/sign-up">
+          Sign up
+        </a>
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ export default function Footer() {
             <a className="link link-hover" href="/about-us">
               About us
             </a>
-            <a className="link link-hover">Contact</a>
+            <a className="link link-hover" href="#contact">Contact</a>
           </nav>
           <nav>
             <h6 className="footer-title">Social</h6>
